@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="1.781573">
+<testcase classname="Sample Test API" name="Validate sample test API" time="1.781573">
+<system-out><![CDATA[Given User make a call to api "https://open.er-api.com/v6/latest/USD".......passed
+When verify the api status as "success".....................................passed
+Then verify USD price against the AED between 3.6 and 3.7...................passed
+Then verify the api response time is not less then 3 seconds................passed
+Then verify total currency paires returned as 162...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-14T16:46:18.162Z",
+        "line": 13,
+        "name": "Validate sample test API",
+        "description": "",
+        "id": "sample-test-api;validate-sample-test-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1757828100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User make a call to api \"https://open.er-api.com/v6/latest/USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://open.er-api.com/v6/latest/USD",
+                  "offset": 25
+                }
+              ],
+              "location": "SampleSteps.user_make_a_call_to_api(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1418600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify the api status as \"success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success",
+                  "offset": 26
+                }
+              ],
+              "location": "SampleSteps.verify_the_api_status(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2917400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify USD price against the AED between 3.6 and 3.7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3.6",
+                  "offset": 41
+                },
+                {
+                  "val": "3.7",
+                  "offset": 49
+                }
+              ],
+              "location": "SampleSteps.verify_the_api_response_time(double,double)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 640000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the api response time is not less then 3 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 46
+                }
+              ],
+              "location": "SampleSteps.verify_the_api_response(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 195500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify total currency paires returned as 162",
+            "match": {
+              "arguments": [
+                {
+                  "val": "162",
+                  "offset": 41
+                }
+              ],
+              "location": "SampleSteps.verify_currency_paires_are_returned(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SampleAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Sample Test API",
+    "description": "",
+    "id": "sample-test-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SampleAPI.feature",
+    "tags": []
+  }
+]
